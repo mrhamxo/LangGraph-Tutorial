@@ -84,7 +84,11 @@ if user_input:
     CONFIG: RunnableConfig = {
        "configurable": {
             "thread_id": session_state['thread_id']
-        }
+        },
+       "metadata": {
+           "thread_id": session_state['thread_id']
+       },
+       "run_name": "Chat_turn"
     }
         
     # add the user input to the workflow state using streaming
